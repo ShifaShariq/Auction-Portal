@@ -1,0 +1,60 @@
+.centered{
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid blue;
+}
+label{
+  padding-left: 16px;
+}
+.inputs{
+    padding-top: 0px;
+    align-self: center;
+    font-size: 32 px;
+    padding-left: 8px; 
+}
+.input-box{
+    float: left;
+    align-self: center;
+    width: 33.1%;
+    height: 80px;
+    /* border: 1px solid blue;  */
+}
+input{
+  width: 370px;
+  height: 40px;
+  margin: 8px 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* .input:not{
+  border: 1 px solid #FF0000;
+} */
+h3, label{
+  color: #565352;
+}
+button {
+    align-self: center;
+    background-color: #009933;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 500px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  button:disabled{
+    background-color:  #4CAF50;
+  }
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }

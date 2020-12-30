@@ -1,0 +1,67 @@
+<div class="centered">
+    <h1>Complete Dealership Details</h1>
+    <h3>All fields for registration are mandatory.</h3>
+
+    <div>
+        <h2>Dealership Details</h2>
+        <form [formGroup] = "userprofileForm">
+        <div class ="inputs">
+            <div class ="input-box">
+                <label><b>Dealership Name</b></label>
+                <br>
+                <input type = "text" formControlName="dname" placeholder= "Dealership Name"/>
+            </div>
+            <div class ="input-box">
+                <label><b>Dealership Email</b></label>
+                <br>
+                <input type = "email" formControlName="dmail" placeholder= "Dealership email"/>
+            </div>
+            <div class ="input-box">
+                <label><b>Dealership Phone Number</b></label>
+                <br>
+                <input type = "tel" formControlName="dphno" placeholder= "Dealership Phone Number"/>
+            </div>
+        </div>
+        <div class ="inputs">
+            <div class ="input-box">
+                <label><b>Address 1</b></label>
+                <br>
+                <input type = "text" formControlName="addr1" placeholder= "Address1"/>
+            </div>
+            <div class ="input-box">
+                <label><b>Address 2</b></label>
+                <br>
+                <input type = "text" formControlName="addr2" placeholder= "Address2"/>
+            </div>
+            <div class ="input-box">
+                <label><b>City</b></label>
+                <br>
+                <input type = "text" formControlName="city" placeholder= "City"/>
+            </div>
+        </div>
+        <h2>Contact Details</h2>
+        <div class ="inputs">
+            <div class ="input-box">
+                <label><b>First Name</b></label>
+                <br>
+                <input type = "text" formControlName="fname" placeholder= "First Name"/>
+            </div>
+            <div class ="input-box">
+                <label><b>Last Name</b></label>
+                <br>
+                <input type = "text" formControlName="lname" placeholder= "Last Name"/>
+            </div>
+            <div class ="input-box">
+                <label><b>Phone Number</b></label>
+                <br>
+                <input type = "tel" formControlName="phno" placeholder= "Phone Number"/>
+            </div>
+            <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+        </div>
+        </form>
+        <button type = "submit" [disabled]="!userprofileForm.valid">
+            <a routerLink="/signed-in" routerLinkActive="active"></a> Register </button>
+    </div>
+    
+      
+</div>

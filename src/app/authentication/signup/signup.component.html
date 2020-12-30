@@ -1,0 +1,16 @@
+<div class = "side-box">
+    <p>Haven't logged in already? Register Now!</p>
+    <h2>{{title}}</h2>
+    <form [formGroup] = "userprofileForm">
+        <input type = "text" formControlName="dname" placeholder= "Dealership Name"/>
+        <input type = "email" formControlName="dmail" placeholder= "Dealership email" ngModel email="true"/>
+        <input type = "text" formControlName="dphno" required minlength="11" placeholder= "Dealership Phone Number"/>
+    </form>
+
+    <nav>
+    <a><button type = "submit" (click)="OnSelect()"> Sign Up </button>
+    </a>
+    </nav>
+</div> 
+
+<!-- [disabled]="!userprofileForm.valid"  -->

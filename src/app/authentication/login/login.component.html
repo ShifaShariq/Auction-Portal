@@ -1,0 +1,13 @@
+
+<div class = "side-box">
+    <h2>{{title}}</h2>  <!--Sign In -->
+    <form [formGroup] = "userprofileForm" >
+    <!-- <label for="uname"><b>Username</b></label> -->
+        <input type = "text" formControlName="uname" placeholder= "Enter Username"/>
+
+    <!-- <label for="psw"><b>Password</b></label> -->
+        <input type = "password" formControlName="psw" placeholder= "Enter Password"/>
+    </form>
+    <button type = "submit" [disabled]="!userprofileForm.valid" (click)= "login()"> Login </button>
+</div>
+
